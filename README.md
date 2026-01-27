@@ -20,7 +20,13 @@ Minimal terminal-aesthetic portfolio showcasing open source projects.
 
 ## Deploy
 
-Copy `index.html` to `/var/www/blackabee/` on the server.
+```bash
+scp index.html katie-server:/var/www/blackabee/
+```
+
+Server: katie-server (68.183.169.72)
+Path: `/var/www/blackabee/` (NOT /var/www/html/)
+Site: https://blackabee.com
 
 ## License
 
