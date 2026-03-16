@@ -478,22 +478,6 @@
 
             <div class="project">
                 <div class="project-name">
-                    <a href="https://github.com/sudokatie/pathfinder">pathfinder</a>
-                </div>
-                <p class="project-desc">
-                    Debug PATH issues before they debug you. Which binary actually runs when 
-                    you type `node`? pathfinder shows you exactly what, where, why, and what 
-                    alternatives exist. Every dev has had PATH hell - this ends it.
-                </p>
-                <div class="project-meta">
-                    rust
-                    <span style="margin: 0 8px;">|</span>
-                    <a href="https://github.com/sudokatie/pathfinder">source</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-name">
                     <a href="https://github.com/sudokatie/vagrant">vagrant</a>
                 </div>
                 <p class="project-desc">
@@ -505,22 +489,6 @@
                     python
                     <span style="margin: 0 8px;">|</span>
                     <a href="https://github.com/sudokatie/vagrant">source</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-name">
-                    <a href="https://github.com/sudokatie/mockingbird">mockingbird</a>
-                </div>
-                <p class="project-desc">
-                    HTTP request recorder and replayer for deterministic tests. Record real API 
-                    responses once, replay them forever. Your tests become fast, reliable, and 
-                    work offline. No more blaming Stripe's sandbox for your failed deploy.
-                </p>
-                <div class="project-meta">
-                    rust
-                    <span style="margin: 0 8px;">|</span>
-                    <a href="https://github.com/sudokatie/mockingbird">source</a>
                 </div>
             </div>
 
@@ -1026,21 +994,6 @@
 
             <div class="project">
                 <div class="project-name">
-                    <a href="https://github.com/sudokatie/vintage-hub">vintage-hub</a>
-                </div>
-                <p class="project-desc">
-                    The launcher for the vintage games collection. All 9 arcade and puzzle classics
-                    in one place, with achievement tracking and high scores. Your retro command center.
-                </p>
-                <div class="project-meta">
-                    typescript
-                    <span style="margin: 0 8px;">|</span>
-                    <a href="https://github.com/sudokatie/vintage-hub">source</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-name">
                     <a href="https://github.com/sudokatie/api-key-rotate">api-key-rotate</a>
                 </div>
                 <p class="project-desc">
@@ -1183,8 +1136,9 @@
                     <a href="https://github.com/sudokatie/chmod-wizard">chmod-wizard</a>
                 </div>
                 <p class="project-desc">
-                    Finally understand Unix permissions. Convert between formats, get suggestions,
-                    stop googling chmod examples every time.
+                    Unix permissions explained and built. "chmod-wizard explain 755" tells you
+                    what it means. "chmod-wizard build" walks you through creating permissions.
+                    No more StackOverflow for file modes.
                 </p>
                 <div class="project-meta">
                     rust
@@ -1198,8 +1152,9 @@
                     <a href="https://github.com/sudokatie/cron-human">cron-human</a>
                 </div>
                 <p class="project-desc">
-                    Bidirectional cron translator. Write English, get cron. Paste cron, get English.
-                    Stop pretending you remember the field order.
+                    Bidirectional cron translation. "every monday at 9am" becomes "0 9 * * 1".
+                    "0 */4 * * *" becomes "every 4 hours". Show next execution times.
+                    Finally, cron you can read.
                 </p>
                 <div class="project-meta">
                     rust
@@ -1213,8 +1168,9 @@
                     <a href="https://github.com/sudokatie/envdiff">envdiff</a>
                 </div>
                 <p class="project-desc">
-                    Compare .env files across environments. Spot missing vars and dangerous defaults
-                    before they hit production.
+                    Compare .env files across environments. Missing vars, changed values,
+                    type mismatches - all visible. Lint mode catches leaked secrets and
+                    insecure defaults. CI-ready.
                 </p>
                 <div class="project-meta">
                     rust
@@ -1228,8 +1184,9 @@
                     <a href="https://github.com/sudokatie/git-story">git-story</a>
                 </div>
                 <p class="project-desc">
-                    Turn repo history into a story. Auto-detects development chapters, visualizes
-                    activity, exports as HTML timeline.
+                    Your repo's history as a visual timeline. Interactive HTML with commits
+                    clustered into chapters, releases highlighted. Shareable single-file output.
+                    See your project's journey.
                 </p>
                 <div class="project-meta">
                     rust
@@ -1243,8 +1200,9 @@
                     <a href="https://github.com/sudokatie/portpilot">portpilot</a>
                 </div>
                 <p class="project-desc">
-                    See what's hogging your ports and kill it. List listeners, query specific ports,
-                    interactive TUI. Cross-platform.
+                    See what's using your ports. Process names, PIDs, memory usage.
+                    "portpilot 3000" tells you exactly what's blocking that port and offers
+                    to kill it. TUI mode for live monitoring.
                 </p>
                 <div class="project-meta">
                     rust
@@ -1258,13 +1216,45 @@
                     <a href="https://github.com/sudokatie/timewarp">timewarp</a>
                 </div>
                 <p class="project-desc">
-                    Run any command with fake system time. Test date-dependent code without
-                    touching your system clock.
+                    Run commands with fake system time. "timewarp 2025-01-01 npm test" for
+                    testing date-dependent code without touching your system clock. LD_PRELOAD
+                    magic that actually works.
                 </p>
                 <div class="project-meta">
                     rust
                     <span style="margin: 0 8px;">|</span>
                     <a href="https://github.com/sudokatie/timewarp">source</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-name">
+                    <a href="https://github.com/sudokatie/mockingbird">mockingbird</a>
+                </div>
+                <p class="project-desc">
+                    HTTP recorder and replayer for deterministic tests. Record real API responses,
+                    replay them in tests. VCR-style cassettes but Rust-fast. No more flaky tests
+                    from external APIs.
+                </p>
+                <div class="project-meta">
+                    rust
+                    <span style="margin: 0 8px;">|</span>
+                    <a href="https://github.com/sudokatie/mockingbird">source</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-name">
+                    <a href="https://github.com/sudokatie/pathfinder">pathfinder</a>
+                </div>
+                <p class="project-desc">
+                    Debug PATH issues. "pathfinder node" shows which node will run, all versions
+                    found, resolution order. Every dev has had PATH hell. This ends it.
+                </p>
+                <div class="project-meta">
+                    rust
+                    <span style="margin: 0 8px;">|</span>
+                    <a href="https://github.com/sudokatie/pathfinder">source</a>
                 </div>
             </div>
         </section>
